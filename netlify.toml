@@ -1,11 +1,7 @@
+# All files sit at the top level of the repository.
 [build]
-  publish = "public"
-  functions = "netlify/functions"
+  publish = "."
+  functions = "."
 
 [functions]
   node_bundler = "esbuild"
-
-[[headers]]
-  for = "/img/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
