@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Northern Spirit Muay Thai</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Northern Spirit is a Muay Thai and boxing club in Sale, Greater Manchester. Kids, juniors, adults and women's classes. Train hard, look after each other, leave stronger.">
+<meta property="og:title" content="Northern Spirit Muay Thai, Sale">
+<meta property="og:image" content="img/collage.jpg">
+<link rel="icon" type="image/png" href="fighter.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+ .leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer { position: absolute; left: 0; top: 0; } .leaflet-container { overflow: hidden; } .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow { -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-user-drag: none; } .leaflet-tile::selection { background: transparent; } .leaflet-safari .leaflet-tile { image-rendering: -webkit-optimize-contrast; } .leaflet-safari .leaflet-tile-container { width: 1600px; height: 1600px; -webkit-transform-origin: 0 0; } .leaflet-marker-icon, .leaflet-marker-shadow { display: block; } .leaflet-container .leaflet-overlay-pane svg { max-width: none !important; max-height: none !important; } .leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile { max-width: none !important; max-height: none !important; width: auto; padding: 0; } .leaflet-container img.leaflet-tile { mix-blend-mode: plus-lighter; } .leaflet-container.leaflet-touch-zoom { -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; } .leaflet-container.leaflet-touch-drag { -ms-touch-action: pinch-zoom; touch-action: none; touch-action: pinch-zoom; } .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom { -ms-touch-action: none; touch-action: none; } .leaflet-container { -webkit-tap-highlight-color: transparent; } .leaflet-container a { -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); } .leaflet-tile { filter: inherit; visibility: hidden; } .leaflet-tile-loaded { visibility: inherit; } .leaflet-zoom-box { width: 0; height: 0; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 800; } .leaflet-overlay-pane svg { -moz-user-select: none; } .leaflet-pane { z-index: 400; } .leaflet-tile-pane { z-index: 200; } .leaflet-overlay-pane { z-index: 400; } .leaflet-shadow-pane { z-index: 500; } .leaflet-marker-pane { z-index: 600; } .leaflet-tooltip-pane { z-index: 650; } .leaflet-popup-pane { z-index: 700; } .leaflet-map-pane canvas { z-index: 100; } .leaflet-map-pane svg { z-index: 200; } .leaflet-vml-shape { width: 1px; height: 1px; } .lvml { behavior: url(#default#VML); display: inline-block; position: absolute; } .leaflet-control { position: relative; z-index: 800; pointer-events: visiblePainted; pointer-events: auto; } .leaflet-top, .leaflet-bottom { position: absolute; z-index: 1000; pointer-events: none; } .leaflet-top { top: 0; } .leaflet-right { right: 0; } .leaflet-bottom { bottom: 0; } .leaflet-left { left: 0; } .leaflet-control { float: left; clear: both; } .leaflet-right .leaflet-control { float: right; } .leaflet-top .leaflet-control { margin-top: 10px; } .leaflet-bottom .leaflet-control { margin-bottom: 10px; } .leaflet-left .leaflet-control { margin-left: 10px; } .leaflet-right .leaflet-control { margin-right: 10px; } .leaflet-fade-anim .leaflet-popup { opacity: 0; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; transition: opacity 0.2s linear; } .leaflet-fade-anim .leaflet-map-pane .leaflet-popup { opacity: 1; } .leaflet-zoom-animated { -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; } svg.leaflet-zoom-animated { will-change: transform; } .leaflet-zoom-anim .leaflet-zoom-animated { -webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1); -moz-transition: -moz-transform 0.25s cubic-bezier(0,0,0.25,1); transition: transform 0.25s cubic-bezier(0,0,0.25,1); } .leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile { -webkit-transition: none; -moz-transition: none; transition: none; } .leaflet-zoom-anim .leaflet-zoom-hide { visibility: hidden; } .leaflet-interactive { cursor: pointer; } .leaflet-grab { cursor: -webkit-grab; cursor: -moz-grab; cursor: grab; } .leaflet-crosshair, .leaflet-crosshair .leaflet-interactive { cursor: crosshair; } .leaflet-popup-pane, .leaflet-control { cursor: auto; } .leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable { cursor: move; cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing; } .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container { pointer-events: none; } .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path { pointer-events: visiblePainted; pointer-events: auto; } .leaflet-container { background: #ddd; outline-offset: 1px; } .leaflet-container a { color: #0078A8; } .leaflet-zoom-box { border: 2px dotted #38f; background: rgba(255,255,255,0.5); } .leaflet-container { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 12px; font-size: 0.75rem; line-height: 1.5; } .leaflet-bar { box-shadow: 0 1px 5px rgba(0,0,0,0.65); border-radius: 4px; } .leaflet-bar a { background-color: #fff; border-bottom: 1px solid #ccc; width: 26px; height: 26px; line-height: 26px; display: block; text-align: center; text-decoration: none; color: black; } .leaflet-bar a, .leaflet-control-layers-toggle { background-position: 50% 50%; background-repeat: no-repeat; display: block; } .leaflet-bar a:hover, .leaflet-bar a:focus { background-color: #f4f4f4; } .leaflet-bar a:first-child { border-top-left-radius: 4px; border-top-right-radius: 4px; } .leaflet-bar a:last-child { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-bottom: none; } .leaflet-bar a.leaflet-disabled { cursor: default; background-color: #f4f4f4; color: #bbb; } .leaflet-touch .leaflet-bar a { width: 30px; height: 30px; line-height: 30px; } .leaflet-touch .leaflet-bar a:first-child { border-top-left-radius: 2px; border-top-right-radius: 2px; } .leaflet-touch .leaflet-bar a:last-child { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; } .leaflet-control-zoom-in, .leaflet-control-zoom-out { font: bold 18px 'Lucida Console', Monaco, monospace; text-indent: 1px; } .leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out { font-size: 22px; } .leaflet-control-layers { box-shadow: 0 1px 5px rgba(0,0,0,0.4); background: #fff; border-radius: 5px; } .leaflet-control-layers-toggle { background-image: url(images/layers.png); width: 36px; height: 36px; } .leaflet-retina .leaflet-control-layers-toggle { background-image: url(images/layers-2x.png); background-size: 26px 26px; } .leaflet-touch .leaflet-control-layers-toggle { width: 44px; height: 44px; } .leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle { display: none; } .leaflet-control-layers-expanded .leaflet-control-layers-list { display: block; position: relative; } .leaflet-control-layers-expanded { padding: 6px 10px 6px 6px; color: #333; background: #fff; } .leaflet-control-layers-scrollbar { overflow-y: scroll; overflow-x: hidden; padding-right: 5px; } .leaflet-control-layers-selector { margin-top: 2px; position: relative; top: 1px; } .leaflet-control-layers label { display: block; font-size: 13px; font-size: 1.08333em; } .leaflet-control-layers-separator { height: 0; border-top: 1px solid #ddd; margin: 5px -10px 5px -6px; } .leaflet-default-icon-path { background-image: url(images/marker-icon.png); } .leaflet-container .leaflet-control-attribution { background: #fff; background: rgba(255, 255, 255, 0.8); margin: 0; } .leaflet-control-attribution, .leaflet-control-scale-line { padding: 0 5px; color: #333; line-height: 1.4; } .leaflet-control-attribution a { text-decoration: none; } .leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus { text-decoration: underline; } .leaflet-attribution-flag { display: inline !important; vertical-align: baseline !important; width: 1em; height: 0.6669em; } .leaflet-left .leaflet-control-scale { margin-left: 5px; } .leaflet-bottom .leaflet-control-scale { margin-bottom: 5px; } .leaflet-control-scale-line { border: 2px solid #777; border-top: none; line-height: 1.1; padding: 2px 5px 1px; white-space: nowrap; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.8); text-shadow: 1px 1px #fff; } .leaflet-control-scale-line:not(:first-child) { border-top: 2px solid #777; border-bottom: none; margin-top: -2px; } .leaflet-control-scale-line:not(:first-child):not(:last-child) { border-bottom: 2px solid #777; } .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { box-shadow: none; } .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { border: 2px solid rgba(0,0,0,0.2); background-clip: padding-box; } .leaflet-popup { position: absolute; text-align: center; margin-bottom: 20px; } .leaflet-popup-content-wrapper { padding: 1px; text-align: left; border-radius: 12px; } .leaflet-popup-content { margin: 13px 24px 13px 20px; line-height: 1.3; font-size: 13px; font-size: 1.08333em; min-height: 1px; } .leaflet-popup-content p { margin: 17px 0; margin: 1.3em 0; } .leaflet-popup-tip-container { width: 40px; height: 20px; position: absolute; left: 50%; margin-top: -1px; margin-left: -20px; overflow: hidden; pointer-events: none; } .leaflet-popup-tip { width: 17px; height: 17px; padding: 1px; margin: -10px auto 0; pointer-events: auto; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: white; color: #333; box-shadow: 0 3px 14px rgba(0,0,0,0.4); } .leaflet-container a.leaflet-popup-close-button { position: absolute; top: 0; right: 0; border: none; text-align: center; width: 24px; height: 24px; font: 16px/24px Tahoma, Verdana, sans-serif; color: #757575; text-decoration: none; background: transparent; } .leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus { color: #585858; } .leaflet-popup-scrolled { overflow: auto; } .leaflet-oldie .leaflet-popup-content-wrapper { -ms-zoom: 1; } .leaflet-oldie .leaflet-popup-tip { width: 24px; margin: 0 auto; -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"; filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678); } .leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip { border: 1px solid #999; } .leaflet-div-icon { background: #fff; border: 1px solid #666; } .leaflet-tooltip { position: absolute; padding: 6px; background-color: #fff; border: 1px solid #fff; border-radius: 3px; color: #222; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.4); } .leaflet-tooltip.leaflet-interactive { cursor: pointer; pointer-events: auto; } .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { position: absolute; pointer-events: none; border: 6px solid transparent; background: transparent; content: ""; } .leaflet-tooltip-bottom { margin-top: 6px; } .leaflet-tooltip-top { margin-top: -6px; } .leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before { left: 50%; margin-left: -6px; } .leaflet-tooltip-top:before { bottom: 0; margin-bottom: -12px; border-top-color: #fff; } .leaflet-tooltip-bottom:before { top: 0; margin-top: -12px; margin-left: -6px; border-bottom-color: #fff; } .leaflet-tooltip-left { margin-left: -6px; } .leaflet-tooltip-right { margin-left: 6px; } .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { top: 50%; margin-top: -6px; } .leaflet-tooltip-left:before { right: 0; margin-right: -12px; border-left-color: #fff; } .leaflet-tooltip-right:before { left: 0; margin-left: -12px; border-right-color: #fff; } @media print { .leaflet-control { -webkit-print-color-adjust: exact; print-color-adjust: exact; } } 
+</style>
+<style>
+/* Layout: full-screen photo hero, then quiet stacked sections on black / navy bands. Black, dark blue, white. */
+:root{
+  color-scheme:dark;
+  --black:#04060b;
+  --navy:#0a1428;
+  --navy-2:#0f1d3a;
+  --line:#1c2b4b;
+  --blue:#4f7bff;      /* small highlights only */
+  --white:#f6f8fc;
+  --ink-2:#aab5ca;
+  --ink-3:#6e7b96;
+  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:clip}
+body{background:var(--black);color:var(--white);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.display{font-family:var(--display);font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.005em;text-wrap:balance}
+.eyebrow{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.24em;font-size:13px;color:var(--blue)}
+.h2{font-size:clamp(42px,6vw,76px);margin:12px 0 16px}
+.lead{color:var(--ink-2);font-size:18px;max-width:56ch}
+section{padding-block:112px;position:relative}
+.band{background:var(--navy)}
+
+/* scroll progress */
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--blue);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.08em;padding:15px 26px;border-radius:2px;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s}
+.btn svg{width:18px;height:18px;transition:transform .25s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-solid{background:var(--white);color:var(--black)}
+.btn-solid::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(90deg,transparent,rgba(79,123,255,.35),transparent);transform:skewX(-20deg);transition:left .6s var(--ease)}
+.btn-solid:hover::after{left:120%}
+.btn-line{border-color:rgba(246,248,252,.35);color:var(--white)}
+.btn-line:hover{border-color:var(--white);background:rgba(246,248,252,.06)}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .35s,border-color .35s,transform .4s var(--ease);border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(4,6,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:54px;width:auto;transition:transform .4s var(--ease)}
+.brand:hover img{transform:rotate(-4deg) scale(1.05)}
+.brand span{font-family:var(--display);font-weight:800;font-size:21px;letter-spacing:.05em;text-transform:uppercase;line-height:1}
+.links{display:flex;gap:30px;align-items:center}
+.links a:not(.btn){position:relative;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:15px;color:var(--ink-2);transition:color .2s}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--blue);transform:scaleX(0);transform-origin:right;transition:transform .3s var(--ease)}
+.links a:not(.btn):hover{color:var(--white)}
+.links a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+.links .btn{padding:10px 18px;font-size:15px}
+.burger{display:none;background:none;border:0;width:44px;height:44px}
+@media (max-width:1100px){
+  .links{position:fixed;inset:calc(72px + env(safe-area-inset-top,0px)) 0 auto 0;background:var(--black);flex-direction:column;align-items:stretch;gap:0;padding:8px max(24px,env(safe-area-inset-right,0px)) 24px max(24px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s var(--ease);z-index:-1}
+  .links.open{transform:none}
+  .links a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line);font-size:18px}
+  .links a:not(.btn)::after{display:none}
+  .links .btn{margin-top:16px;justify-content:center}
+  .burger{display:grid;place-items:center}
+}
+
+/* hero: the five club photos fill the screen as a fixed backdrop that fades, zooms and blurs away as you scroll */
+.hero{min-height:100svh;display:flex;align-items:center;padding-block:calc(96px + env(safe-area-inset-top,0px)) 72px;isolation:isolate}
+.hero-bg{position:fixed;inset:0;z-index:-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:3px;background:var(--black);pointer-events:none;
+  opacity:var(--fade,1);transform:scale(calc(1 + (1 - var(--fade,1)) * .03));will-change:opacity}
+.hero-bg figure{position:relative;overflow:hidden;animation:tileIn 1.6s var(--ease) both}
+.hero-bg figure:nth-child(2){animation-delay:.12s}.hero-bg figure:nth-child(3){animation-delay:.24s}.hero-bg figure:nth-child(4){animation-delay:.36s}.hero-bg figure:nth-child(5){animation-delay:.48s}
+.hero-bg img{width:100%;height:100%;object-fit:cover;image-rendering:auto;backface-visibility:hidden;animation:kb 22s ease-in-out infinite alternate}
+.hero-bg figure:nth-child(even) img{animation-direction:alternate-reverse}
+.hero-bg .wide{grid-column:span 2}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(4,6,11,.92) 0%,rgba(4,6,11,.7) 34%,rgba(4,6,11,.18) 66%,rgba(10,20,40,.22) 100%),
+  linear-gradient(0deg,rgba(4,6,11,.95) 0%,transparent 38%),
+  linear-gradient(180deg,rgba(4,6,11,.7) 0%,transparent 18%)}
+@keyframes tileIn{from{opacity:0;transform:scale(1.04)}}
+@keyframes kb{from{transform:scale(1) translate(0,0)}to{transform:scale(1.04) translate(-1%,-.6%)}}
+.hero .wrap{width:100%}
+.hero .wrap>div{max-width:640px}
+.hero h1{font-size:clamp(48px,5.6vw,92px)}
+.hero h1 .ln>span{white-space:nowrap}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .ln>span{display:block;animation:rise .9s var(--ease) both}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.1s}
+.hero h1 .ln:nth-child(3)>span{animation-delay:.2s}
+.hero h1 .outline{color:transparent;-webkit-text-stroke:1.5px var(--white)}
+.hero h1 .blue{color:var(--blue)}
+.hero-logo{height:clamp(110px,17vh,170px);width:auto;margin-bottom:22px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6));animation:logoIn 1.1s var(--ease) both}
+@keyframes logoIn{from{opacity:0;transform:translateY(-14px) scale(.9)}}
+.hero p{margin:22px 0 30px;font-size:19px;color:var(--ink-2);max-width:44ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fade-up{animation:fadeUp .9s var(--ease) both}
+.d1{animation-delay:.35s}.d2{animation-delay:.5s}.d3{animation-delay:.65s}
+@keyframes rise{from{transform:translateY(105%)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}}
+.scroll-cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:22px;height:36px;border:1px solid rgba(246,248,252,.4);border-radius:12px}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--white);animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+@media (max-width:900px){
+  .hero-logo{height:96px}
+  .hero-bg{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:1.3fr 1fr 1fr}
+  .hero-bg::after{background:linear-gradient(0deg,rgba(4,6,11,.96) 0%,rgba(4,6,11,.72) 55%,rgba(4,6,11,.55) 100%)}
+  .scroll-cue{display:none}
+}
+
+/* ticker */
+.ticker{border-block:1px solid var(--line);overflow:hidden;padding-block:16px;background:rgba(4,6,11,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.ticker .track{display:flex;width:max-content;animation:scroll 40s linear infinite}
+.ticker span{font-family:var(--display);font-weight:700;font-size:26px;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;padding-inline:28px;color:transparent;-webkit-text-stroke:1px rgba(246,248,252,.55)}
+.ticker span:nth-child(3n+1){color:var(--white);-webkit-text-stroke:0}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* reveal: content is always visible; it only slides into place */
+.reveal{transition:transform .9s var(--ease)}
+.js .reveal.pending{transform:translateY(36px)}
+.h2 .bar{display:block;width:56px;height:3px;background:var(--blue);margin-top:18px;transform-origin:left;transition:transform .9s var(--ease) .2s}
+.js .pending .h2 .bar{transform:scaleX(0)}
+
+/* classes */
+.classes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:56px}
+.class{position:relative;display:flex;flex-direction:column;gap:12px}
+.class .ph{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:3px;background:var(--navy)}
+.class .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05) brightness(.85);transition:filter .6s,transform .9s var(--ease)}
+.class .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,20,40,.85),transparent 55%);transition:opacity .5s}
+.class:hover .ph img{filter:none;transform:scale(1.06)}
+.class:hover .ph::after{opacity:.4}
+.class .tag{position:absolute;left:14px;top:14px;z-index:1;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:12px;background:var(--black);color:var(--white);padding:5px 10px;border-radius:2px}
+.class h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:28px;line-height:1;margin-top:6px}
+.class p{color:var(--ink-2);font-size:15.5px}
+.class .line{height:1px;background:var(--line);position:relative;overflow:hidden}
+.class .line::after{content:"";position:absolute;inset:0;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.class:hover .line::after{transform:scaleX(1)}
+@media (max-width:980px){.classes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.classes{grid-template-columns:1fr}.class .ph{aspect-ratio:4/3}}
+
+/* timetable */
+.tt-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.days{display:flex;gap:4px;margin:44px 0 20px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);position:relative}
+.days button{flex:none;background:none;border:0;color:var(--ink-3);padding:14px 18px;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:16px;transition:color .2s}
+.days button:hover{color:var(--white)}
+.days button[aria-selected="true"]{color:var(--white)}
+.days .ind{position:absolute;bottom:0;height:2px;background:var(--blue);transition:left .4s var(--ease),width .4s var(--ease)}
+.sessions{display:grid;gap:8px;min-height:180px}
+.session{display:grid;grid-template-columns:160px minmax(0,1fr) auto;gap:24px;align-items:center;padding:20px 22px;border:1px solid var(--line);border-radius:3px;background:rgba(4,6,11,.35);animation:fadeUp .5s var(--ease) both;transition:border-color .25s,background .25s}
+.session:hover{border-color:var(--blue);background:var(--navy-2)}
+.session time{font-family:var(--display);font-weight:700;font-size:24px;font-variant-numeric:tabular-nums}
+.session h4{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:22px;line-height:1.1}
+.session p{color:var(--ink-3);font-size:15px}
+.level{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;padding:6px 12px;border:1px solid var(--line);border-radius:2px;color:var(--ink-2);white-space:nowrap}
+.empty{color:var(--ink-3);padding:40px;border:1px dashed var(--line);text-align:center;border-radius:3px}
+.note{margin-top:20px;color:var(--ink-3);font-size:14px}
+@media (max-width:640px){.session{grid-template-columns:minmax(0,1fr) auto;gap:4px 16px}.session time{grid-column:1/-1;font-size:20px;color:var(--blue)}}
+
+/* about */
+.about{overflow:hidden}
+.about .wm{position:absolute;right:-8%;top:50%;height:115%;width:auto;opacity:.04;pointer-events:none;transform:translateY(calc(-50% + var(--py,0px)))}
+.about .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start;position:relative}
+.about .sticky{position:sticky;top:120px}
+.about .copy>p{color:var(--ink-2);margin-bottom:18px;font-size:18px}
+.about .copy>p:first-child{color:var(--white);font-size:21px;line-height:1.5}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line)}
+.value{background:var(--black);padding:26px;transition:background .3s}
+.value:hover{background:var(--navy)}
+.value h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;display:flex;align-items:center;gap:10px}
+.value h3::before{content:"";width:8px;height:8px;background:var(--blue);transform:rotate(45deg);transition:transform .4s var(--ease)}
+.value:hover h3::before{transform:rotate(225deg)}
+.value p{color:var(--ink-2);font-size:15px;margin-top:8px}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:12px}.about .sticky{position:static}}
+@media (max-width:480px){.values{grid-template-columns:1fr}}
+
+/* first session */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:52px}
+.step{padding-top:24px;border-top:1px solid var(--line);position:relative}
+.step::before{content:"";position:absolute;left:0;top:-1px;width:0;height:1px;background:var(--blue);transition:width 1s var(--ease)}
+.step.lit::before{width:100%}
+.step small{font-family:var(--display);font-weight:700;letter-spacing:.2em;color:var(--blue);font-size:14px}
+.step h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:30px;line-height:1;margin:10px 0}
+.step p{color:var(--ink-2)}
+@media (max-width:860px){.steps{grid-template-columns:1fr;gap:32px}}
+
+/* kit */
+.kit-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:44px;background:var(--line);border:1px solid var(--line)}
+.kit-item{background:var(--navy);padding:24px 26px;transition:background .3s}
+.kit-item:hover{background:var(--navy-2)}
+.kit-item h3{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:21px}
+.kit-item p{color:var(--ink-2);font-size:15px;margin-top:4px}
+.kit-item .free{color:var(--white);font-weight:600}
+@media (max-width:900px){.kit-list{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.kit-list{grid-template-columns:1fr}}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:80px}
+.qa{border-bottom:1px solid var(--line)}
+.qa:first-child{border-top:1px solid var(--line)}
+.qa button{width:100%;background:none;border:0;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:22px;line-height:1.15;transition:color .2s}
+.qa button:hover{color:var(--blue)}
+.qa .pm{flex:none;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;position:relative;transition:transform .4s var(--ease),background .3s,border-color .3s}
+.qa .pm::before,.qa .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+.qa .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.qa.open .pm{transform:rotate(135deg);background:var(--blue);border-color:var(--blue)}
+.qa .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.qa.open .ans{grid-template-rows:1fr}
+.qa .ans>div{overflow:hidden}
+.qa .ans p{color:var(--ink-2);padding:0 48px 24px 0}
+@media (max-width:900px){.faq .wrap{grid-template-columns:1fr;gap:28px}}
+
+/* visit + map */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px;margin-top:48px;align-items:stretch}
+.mapbox{position:relative;min-height:460px;border-radius:4px;overflow:hidden;border:1px solid var(--line);background:#0b1426}
+#map{position:absolute;inset:0;background:#0b1426;font-family:var(--body)}
+#map .leaflet-tile-pane{filter:invert(1) hue-rotate(195deg) brightness(.82) contrast(.92) saturate(.55)}
+#map .leaflet-control-zoom a{background:var(--black);color:var(--white);border-color:var(--line)}
+#map .leaflet-control-zoom a:hover{background:var(--navy-2)}
+#map .leaflet-bar{border:1px solid var(--line);box-shadow:none}
+#map .leaflet-control-attribution{background:rgba(4,6,11,.75);color:var(--ink-3);font-size:11px}
+#map .leaflet-control-attribution a{color:var(--ink-2)}
+#map .leaflet-popup-content-wrapper,#map .leaflet-popup-tip{background:var(--black);color:var(--white);border:1px solid var(--line);border-radius:3px;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+#map .leaflet-popup-content{margin:14px 18px;font-size:14px;line-height:1.5}
+#map .leaflet-popup-content b{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:18px;display:block}
+#map .leaflet-popup-content a{color:var(--blue);font-weight:600}
+#map a.leaflet-popup-close-button{color:var(--ink-2)}
+.pin{position:relative;width:44px;height:56px}
+.pin svg{position:absolute;left:0;top:0;width:44px;height:56px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.6));animation:drop .9s cubic-bezier(.3,1.6,.5,1) both}
+.pin .pulse{position:absolute;left:50%;bottom:-6px;width:18px;height:8px;margin-left:-9px;border-radius:50%;background:rgba(79,123,255,.6)}
+.pin .pulse::before,.pin .pulse::after{content:"";position:absolute;left:50%;top:50%;width:18px;height:8px;margin:-4px 0 0 -9px;border-radius:50%;border:2px solid var(--blue);animation:ring 2.2s ease-out infinite}
+.pin .pulse::after{animation-delay:1.1s}
+@keyframes drop{0%{transform:translateY(-60px);opacity:0}60%{opacity:1}100%{transform:none}}
+@keyframes ring{from{transform:scale(1);opacity:.9}to{transform:scale(5);opacity:0}}
+.map-hint{position:absolute;left:12px;bottom:12px;z-index:500;font-size:12px;color:var(--ink-2);background:rgba(4,6,11,.8);padding:6px 10px;border-radius:2px;pointer-events:none;transition:opacity .3s}
+.recenter{position:absolute;right:10px;bottom:30px;z-index:500;background:var(--black);border:1px solid var(--line);border-radius:2px;width:36px;height:36px;display:grid;place-items:center}
+.recenter:hover{background:var(--navy-2)}
+.recenter svg{width:18px;height:18px}
+.info{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.info>div{background:var(--navy);padding:24px 26px;flex:1}
+.info h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.2em;font-size:13px;color:var(--blue);font-weight:700;margin-bottom:6px}
+.info p{font-size:17px}
+.info .btn{margin-top:14px}
+@media (max-width:900px){.visit-grid{grid-template-columns:1fr}.mapbox{min-height:360px}}
+
+/* cta */
+.cta{text-align:center;padding-block:120px;overflow:hidden;background:radial-gradient(60% 80% at 50% 100%,var(--navy-2),var(--black) 70%)}
+.cta img{height:150px;width:auto;margin:0 auto 28px;opacity:.95}
+.cta h2{font-size:clamp(48px,8vw,108px)}
+.cta p{color:var(--ink-2);font-size:19px;margin:18px auto 32px;max-width:42ch}
+.cta .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:56px 32px;color:var(--ink-3);font-size:15px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot h4{font-family:var(--display);text-transform:uppercase;letter-spacing:.2em;font-size:13px;color:var(--white);margin-bottom:14px}
+.foot ul{list-style:none;display:grid;gap:8px}
+.foot a:hover{color:var(--white)}
+.foot .brand{margin-bottom:14px;color:var(--white)}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line);font-size:14px}
+@media (max-width:760px){.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
+
+/* owner button + admin */
+.owner-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;color:var(--ink-2);border:1px solid var(--line);border-radius:2px;padding:9px 14px;transition:color .2s,border-color .2s,background .2s}
+.owner-btn:hover{color:var(--white);border-color:var(--blue);background:rgba(79,123,255,.08)}
+.owner-btn .lock,.foot-owner .lock{width:16px;height:16px;flex:none;transition:transform .35s var(--ease)}
+.owner-btn:hover .lock{transform:translateY(-1px) rotate(-8deg)}
+.links .owner-btn::after{display:none}
+.foot-owner{display:inline-flex;align-items:center;gap:8px}
+@media (max-width:1100px){.links .owner-btn{justify-content:center;margin-top:16px;padding:12px;font-size:16px;border-bottom:1px solid var(--line)}}
+.socials{list-style:none;display:flex;gap:14px;margin-top:14px;flex-wrap:wrap}
+.socials a{text-decoration:underline;text-underline-offset:3px}
+.class .when{color:var(--white);font-size:14px;font-weight:600}
+.coaches{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;margin-top:48px}
+.coach{display:flex;flex-direction:column;gap:10px}
+.coach .ph{aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:var(--navy-2);display:grid;place-items:center}
+.coach .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .5s,transform .8s var(--ease)}
+.coach:hover .ph img{filter:none;transform:scale(1.05)}
+.coach .ph span{font-family:var(--display);font-weight:800;font-size:64px;color:var(--line)}
+.coach h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:24px;line-height:1}
+.coach small{font-family:var(--display);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--blue);font-weight:600}
+.coach p{color:var(--ink-2);font-size:15px}
+
+.admin{position:fixed;inset:0;z-index:100;background:rgba(4,6,11,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:flex-start;overflow-y:auto;padding:calc(24px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:fadeUp .35s var(--ease) both}
+.admin[hidden]{display:none!important}
+.panel{width:100%;max-width:980px;background:var(--navy);border:1px solid var(--line);border-radius:6px;box-shadow:0 40px 100px rgba(0,0,0,.6);overflow:hidden}
+.panel.small{max-width:440px;margin-top:8vh}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-bottom:1px solid var(--line)}
+.panel-head h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:26px;display:flex;align-items:center;gap:12px}
+.panel-head h2 .lock{width:22px;height:22px;color:var(--blue)}
+.x{background:none;border:1px solid var(--line);border-radius:2px;width:38px;height:38px;display:grid;place-items:center;color:var(--ink-2)}
+.x:hover{color:var(--white);border-color:var(--ink-3)}
+.panel-body{padding:24px}
+.lockbig{width:56px;height:56px;border-radius:50%;background:var(--navy-2);display:grid;place-items:center;color:var(--blue);margin-bottom:16px}
+.lockbig svg{width:26px;height:26px}
+.muted{color:var(--ink-3);font-size:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--ink-2)}
+.field input,.field textarea,.field select{width:100%;background:var(--black);color:var(--white);border:1px solid var(--line);border-radius:3px;padding:11px 12px;font:inherit;font-size:15px;outline:none;transition:border-color .2s}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue)}
+.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.form .full{grid-column:1/-1}
+@media (max-width:640px){.form{grid-template-columns:1fr}}
+.row-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.abtn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:15px;padding:11px 18px;border-radius:2px;border:1px solid var(--line);background:transparent;transition:background .2s,border-color .2s,color .2s}
+.abtn:hover{border-color:var(--ink-3)}
+.abtn.primary{background:var(--white);color:var(--black);border-color:var(--white)}
+.abtn.primary:hover{background:#dfe6f5}
+.abtn.danger{color:#ff8a8a;border-color:#5a2230}
+.abtn.danger.confirm{background:#5a2230;color:#fff}
+.abtn[disabled]{opacity:.5;cursor:not-allowed}
+.abtn.sm{padding:7px 12px;font-size:13px}
+.msg{margin-top:14px;padding:11px 14px;border-radius:3px;font-size:14px}
+.msg.ok{background:rgba(52,168,107,.12);border:1px solid rgba(52,168,107,.4);color:#7fe0ab}
+.msg.err{background:rgba(220,70,90,.1);border:1px solid rgba(220,70,90,.4);color:#ff9aa8}
+.msg.info{background:rgba(79,123,255,.1);border:1px solid rgba(79,123,255,.35);color:#b9c9ff}
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);padding:0 16px;scrollbar-width:none}
+.tabs button{flex:none;background:none;border:0;border-bottom:2px solid transparent;padding:14px 14px 12px;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:15px;color:var(--ink-3)}
+.tabs button:hover{color:var(--white)}
+.tabs button[aria-selected="true"]{color:var(--white);border-bottom-color:var(--blue)}
+.items{display:grid;gap:8px;margin-bottom:20px}
+.item{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:16px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:3px;background:var(--black)}
+.item.off{opacity:.55}
+.item .thumb{width:56px;height:56px;border-radius:2px;background:var(--navy-2);overflow:hidden;display:grid;place-items:center;font-family:var(--display);font-weight:800;color:var(--ink-3)}
+.item .thumb img{width:100%;height:100%;object-fit:cover}
+.item b{font-family:var(--display);text-transform:uppercase;font-size:18px;letter-spacing:.02em;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item span{color:var(--ink-3);font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:640px){.item{grid-template-columns:44px minmax(0,1fr)}.item .thumb{width:44px;height:44px}.item .acts{grid-column:1/-1;justify-content:flex-start}}
+.editor{border:1px solid var(--blue);border-radius:4px;padding:20px;background:rgba(79,123,255,.04);margin-bottom:20px}
+.editor h3{font-family:var(--display);text-transform:uppercase;font-size:20px;margin-bottom:16px}
+.imgrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.imgrow input[type=text]{flex:1 1 220px}
+.imgprev{margin-top:10px;height:140px;border-radius:3px;overflow:hidden;border:1px solid var(--line);background:var(--black)}
+.imgprev img{width:100%;height:100%;object-fit:cover}
+.section-title{font-family:var(--display);text-transform:uppercase;letter-spacing:.16em;font-size:13px;color:var(--blue);font-weight:700;margin:26px 0 12px;grid-column:1/-1}
+.section-title:first-child{margin-top:0}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{border:1px solid var(--line);background:var(--black);border-radius:2px;padding:8px 12px;font-size:13px;font-weight:600}
+.seg button[aria-pressed="true"]{border-color:var(--blue);background:var(--navy-2)}
+.spin{width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+body.admin-open{overflow:hidden}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal.pending{transform:none}
+  .js .pending .h2 .bar{transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Northern Spirit home"><img src="logo.png" alt="Northern Spirit Muay Thai logo"><span>Northern Spirit</span></a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#classes">Classes</a>
+      <a href="#timetable">Timetable</a>
+      <a href="#about">About</a>
+      <a href="#coaches" id="navCoaches" hidden>Coaches</a>
+      <a href="#kit">Kit</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#visit">Find us</a>
+      <a href="#visit" class="btn btn-solid" id="navCta">Try a class</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-bg" id="heroBg" aria-hidden="true">
+    <figure class="wide"><img data-photo="adults" alt="" style="object-position:center 45%"></figure>
+    <figure><img data-photo="kids" alt=""></figure>
+    <figure><img data-photo="juniors" alt=""></figure>
+    <figure><img data-photo="teens" alt=""></figure>
+    <figure><img data-photo="women" alt="" style="object-position:center 30%"></figure>
+  </div>
+  <div class="wrap">
+    <div>
+      <img class="hero-logo" src="logo.png" alt="Northern Spirit Muay Thai logo">
+      <div class="eyebrow fade-up" id="heroEyebrow">Muay Thai · Sale, Greater Manchester</div>
+      <h1 class="display" style="margin-top:20px" id="heroTitle">
+        <span class="ln"><span>Train hard.</span></span>
+        <span class="ln"><span class="outline">Look after</span></span>
+        <span class="ln"><span>each <span class="blue">other.</span></span></span>
+      </h1>
+      <p class="fade-up d1" id="heroText">Kids, juniors, adults and a women's class. Proper coaching, small groups and a team that pushes you further than you'd go alone.</p>
+      <div class="ctas fade-up d2">
+        <a href="#visit" class="btn btn-solid"><span id="ctaPrimary">Book a free trial</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#timetable" class="btn btn-line" id="ctaSecondary">View timetable</a>
+      </div>
+    </div>
+
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="tickerTrack">
+  <span>Muay Thai</span><span>Kids</span><span>Juniors</span><span>Adults</span><span>Women's class</span><span>Pad work</span><span>Clinch</span><span>Conditioning</span>
+  <span>Muay Thai</span><span>Kids</span><span>Juniors</span><span>Adults</span><span>Women's class</span><span>Pad work</span><span>Clinch</span><span>Conditioning</span>
+</div></div>
+
+<section id="classes">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Our classes</div>
+      <h2 class="display h2">Train with purpose<span class="bar"></span></h2>
+      <p class="lead" id="classesLead">A session for every age and every level, from your first class to your first fight.</p>
+    </div>
+    <div class="classes reveal" id="classGrid"></div>
+  </div>
+</section>
+
+<section class="band" id="timetable">
+  <div class="wrap">
+    <div class="tt-head reveal">
+      <div>
+        <div class="eyebrow">Weekly schedule</div>
+        <h2 class="display h2">Class timetable<span class="bar"></span></h2>
+        <p class="lead" id="ttLead">Sessions run year-round. Turn up ten minutes before the start time.</p>
+      </div>
+      <a href="#visit" class="btn btn-line">Book your first class</a>
+    </div>
+    <div class="days" role="tablist" aria-label="Day of week" id="days"><span class="ind" id="ind"></span></div>
+    <div class="sessions" id="sessions" role="tabpanel" aria-live="polite"></div>
+    <p class="note">All times are UK local.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img class="wm" id="wm" src="logo.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="sticky reveal">
+      <div class="eyebrow" id="aboutEyebrow">About the club</div>
+      <h2 class="display h2"><span id="aboutTitle">More than a gym.</span><br><span id="aboutAccent">A fighting family.</span><span class="bar"></span></h2>
+    </div>
+    <div class="copy reveal">
+      <div id="aboutText"><p>Northern Spirit is a Muay Thai and boxing club in Sale, Greater Manchester. We opened our doors to give people a place to train properly, whether that means competing, getting fit, or finding a community that pushes you to be better.</p>
+      <p>Our coaches have decades of combined experience in the ring and on the mats. We keep class sizes small, standards high, and egos at the door.</p></div>
+      <div class="values">
+        <div class="value"><h3 id="value1Title">Welcoming</h3><p id="value1Text">Every body and every background. We train hard and look after each other.</p></div>
+        <div class="value"><h3 id="value2Title">Community</h3><p id="value2Text">A team, not a gym membership. You'll know names and make friends.</p></div>
+        <div class="value"><h3 id="value3Title">Standards</h3><p id="value3Text">Proper coaching, real technique, and a culture that demands your best.</p></div>
+        <div class="value"><h3 id="value4Title">Grit</h3><p id="value4Text">Show up consistently. The work speaks for itself, on the pads and in life.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coaches" hidden>
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Our coaches</div>
+      <h2 class="display h2">Meet the team<span class="bar"></span></h2>
+      <p class="lead" id="coachesLead">Decades of combined experience in the ring and on the mats.</p>
+    </div>
+    <div class="coaches reveal" id="coachGrid"></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">New here?</div>
+      <h2 class="display h2">Your first session<span class="bar"></span></h2>
+      <p class="lead" id="stepsLead">No experience, no fitness test, no pressure. Here's what happens.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><small>Step 1</small><h3 id="step1Title">Pick a class</h3><p id="step1Text">Choose a beginner-friendly session on the timetable and let us know you're coming.</p></div>
+      <div class="step"><small>Step 2</small><h3 id="step2Title">Turn up early</h3><p id="step2Text">Arrive ten minutes before the start in comfortable clothes with water. We'll lend you gloves and wraps.</p></div>
+      <div class="step"><small>Step 3</small><h3 id="step3Title">Train with us</h3><p id="step3Text">A coach takes you through the basics at your own pace. You'll leave tired and wanting more.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="kit">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">What you need</div>
+      <h2 class="display h2">Kit &amp; equipment<span class="bar"></span></h2>
+      <p class="lead" id="kitLead">For your first session, bring comfortable clothes and water. We lend you the rest. Once you're hooked, here's what to get.</p>
+    </div>
+    <div class="kit-list reveal" id="kitGrid"></div>
+  </div>
+</section>
+
+<section class="faq band" id="faqs">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Questions &amp; answers</div>
+      <h2 class="display h2">Frequently asked<span class="bar"></span></h2>
+      <p class="lead" id="faqLead">Everything you need to know before your first session. Can't find your answer? Get in touch.</p>
+    </div>
+    <div class="reveal" id="faqList"></div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Visit us</div>
+      <h2 class="display h2"><span id="visitHeading">Find the club</span><span class="bar"></span></h2>
+      <p class="lead" id="visitText">Drag and zoom the map, or tap the pin for directions.</p>
+    </div>
+    <div class="visit-grid reveal">
+      <div class="mapbox">
+        <div id="map" role="region" aria-label="Map showing Northern Spirit in Sale"></div>
+        <div class="map-hint" id="mapHint">Click the map to zoom with your scroll wheel</div>
+        <button class="recenter" id="recenter" aria-label="Re-centre map on the club" title="Re-centre">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+        </button>
+      </div>
+      <div class="info">
+        <div><h3>Address</h3><p id="addrText">Northern Spirit Muay Thai<br>Sale M33 4QW<br>Greater Manchester</p>
+          <a class="btn btn-solid" id="dirLink" href="https://www.google.com/maps/dir/?api=1&destination=53.419849,-2.358466" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        <div><h3>Contact</h3><p id="contactText">Add your phone number and email in the owner area.</p></div>
+        <div><h3>Opening hours</h3><p id="hoursText">Open for scheduled classes.<br>See the timetable above.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal">
+    <img src="logo.png" alt="Northern Spirit Muay Thai logo">
+    <h2 class="display" id="ctaTitle">Come train with us</h2>
+    <p id="ctaText">Your first class is on us. Turn up, try it, and see why our members keep coming back.</p>
+    <div class="ctas">
+      <a href="#timetable" class="btn btn-solid">See class times</a>
+      <a href="#visit" class="btn btn-line">Find the club</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="brand"><img src="logo.png" alt="Northern Spirit Muay Thai logo" style="height:110px"></a>
+        <p style="max-width:36ch">Muay Thai in Sale, Greater Manchester. Train hard, look after each other, leave stronger.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="#classes">Classes</a></li><li><a href="#timetable">Timetable</a></li><li><a href="#about">About us</a></li>
+        <li><a href="#kit">Kit &amp; equipment</a></li><li><a href="#faqs">FAQs</a></li><li><a href="#admin" class="foot-owner"><svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Owner login</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li>Sale M33 4QW</li><li>Greater Manchester</li>
+        <li><a href="#visit">View on map</a></li></ul><ul id="socials" class="socials"></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Northern Spirit. All rights reserved.</span><span>Map data © OpenStreetMap contributors</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+document.documentElement.classList.add("js");
+/* ======================================================================
+   EDIT YOUR CONTENT HERE
+   Class descriptions, timetable times, kit and FAQs are STARTER CONTENT.
+   Replace them with your real details before going live.
+   ====================================================================== */
+const CLUB = { lat: 53.419849, lng: -2.358466 }; // pin position: postcode M33 4QW centre. Adjust to the exact door if needed.
+
+const PHOTOS = { adults:"img/adults.jpg", kids:"img/kids.jpg", juniors:"img/juniors.jpg", teens:"img/teens.jpg", women:"img/women.jpg" };
+document.querySelectorAll("[data-photo]").forEach(i => i.src = PHOTOS[i.dataset.photo]);
+
+let CLASSES = [
+  {name:"Kids Muay Thai", img:PHOTOS.kids, desc:"Fun, structured sessions that build confidence, discipline and coordination, with trophies to work towards.", tag:"Kids"},
+  {name:"Juniors & Teens", img:PHOTOS.teens, desc:"Proper technique, pad work and fitness for young people ready to take their training seriously.", tag:"Juniors"},
+  {name:"Adults Muay Thai", img:PHOTOS.adults, desc:"Stance, footwork, the eight limbs, clinch and conditioning. Beginners and experienced fighters train together.", tag:"All levels"},
+  {name:"Women's Class", img:PHOTOS.women, desc:"A supportive women-only session. Learn to strike, get fit and train with a brilliant group.", tag:"Women only"}
+];
+
+let TIMETABLE = {
+  Mon:[{t:"17:00 – 18:00",c:"Kids Muay Thai",d:"Technique, games & pads",l:"Kids"},{t:"18:30 – 20:00",c:"Adults Muay Thai",d:"Technique & pads",l:"All levels"}],
+  Tue:[{t:"17:30 – 18:30",c:"Juniors & Teens",d:"Pads, drills & conditioning",l:"Juniors"},{t:"18:45 – 19:45",c:"Women's Class",d:"Striking & fitness",l:"Women only"}],
+  Wed:[{t:"17:00 – 18:00",c:"Kids Muay Thai",d:"Technique, games & pads",l:"Kids"},{t:"18:30 – 20:00",c:"Adults Muay Thai",d:"Combinations & clinch",l:"All levels"}],
+  Thu:[{t:"17:30 – 18:30",c:"Juniors & Teens",d:"Pads, drills & conditioning",l:"Juniors"},{t:"18:45 – 19:45",c:"Women's Class",d:"Striking & fitness",l:"Women only"}],
+  Fri:[{t:"18:00 – 19:30",c:"Adults Muay Thai",d:"Clinch & sparring drills",l:"All levels"}],
+  Sat:[{t:"10:00 – 11:00",c:"Kids Muay Thai",d:"Technique, games & pads",l:"Kids"},{t:"11:00 – 12:30",c:"Open Mat",d:"Drill, spar or work on weak spots",l:"All levels"}],
+  Sun:[]
+};
+
+let KIT = [
+  {name:"Gloves", desc:"12–16oz depending on your size. Ask a coach which suits you."},
+  {name:"Hand wraps", desc:"4.5m wraps protect your wrists and knuckles."},
+  {name:"Shin guards", desc:"Needed for technical and sparring sessions."},
+  {name:"Gum shield", desc:"Essential for any contact or sparring work."},
+  {name:"Muay Thai shorts", desc:"Optional, but they make kicking easier. Any sports shorts are fine to start."},
+  {name:"First session", desc:"Comfy clothes and water.", free:"We lend you the rest, free."}
+];
+
+let FAQS = [
+  {q:"Do I need any experience?", a:"None at all. Most of our members walked in having never thrown a punch. Beginners are welcome in every class."},
+  {q:"Am I fit enough to start?", a:"You'll get fit by training. You don't need to be fit to begin. Work at your own pace and coaches will scale everything for you."},
+  {q:"What should I bring to my first class?", a:"Comfortable clothes and a bottle of water. We'll lend you gloves and wraps. Arrive about ten minutes early so we can say hello."},
+  {q:"Will I have to spar?", a:"No. Sparring is optional and only for members who've built up the basics and want to."},
+  {q:"Do you have classes for children?", a:"Yes. We run kids and juniors classes as well as adults and a women-only session."},
+  {q:"How do I book a trial?", a:"Pick a class on the timetable and get in touch, or just turn up ten minutes before the start."}
+];
+/* ====================================================================== */
+const TILE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const TILE_OPTS = {minZoom:11,maxZoom:19,bounds:null};
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function renderClasses(){ $("#classGrid").innerHTML = CLASSES.map(c=>`
+  <article class="class"><div class="ph"><span class="tag">${esc(c.tag)}</span><img src="${esc(c.img)}" alt="${esc(c.name)} at Northern Spirit" loading="lazy"></div>
+  <h3>${esc(c.name)}</h3><div class="line"></div><p>${esc(c.desc)}</p>${c.when?`<p class="when">${esc(c.when)}</p>`:""}</article>`).join(""); }
+renderClasses();
+
+function renderKit(){ $("#kitGrid").innerHTML = KIT.map(k=>`<div class="kit-item"><h3>${esc(k.name)}</h3><p>${esc(k.desc)}${k.free?` <span class="free">${esc(k.free)}</span>`:""}</p></div>`).join(""); }
+renderKit();
+
+function renderFaqs(){ $("#faqList").innerHTML = FAQS.map((f,i)=>`
+  <div class="qa${i===0?" open":""}"><button aria-expanded="${i===0}" aria-controls="ans${i}" id="q${i}">${esc(f.q)}<span class="pm" aria-hidden="true"></span></button>
+  <div class="ans" id="ans${i}" role="region" aria-labelledby="q${i}"><div><p>${esc(f.a)}</p></div></div></div>`).join(""); }
+renderFaqs();
+$("#faqList").addEventListener("click", e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  const qa=b.parentElement, open=!qa.classList.contains("open");
+  qa.classList.toggle("open",open); b.setAttribute("aria-expanded",open);
+});
+
+// timetable
+const days = Object.keys(TIMETABLE);
+const today = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][new Date().getDay()];
+$("#days").insertAdjacentHTML("afterbegin", days.map(d=>`<button role="tab" data-d="${d}">${d}${d===today?" · Today":""}</button>`).join(""));
+function moveInd(btn){ const ind=$("#ind"); ind.style.left=btn.offsetLeft+"px"; ind.style.width=btn.offsetWidth+"px"; }
+function renderDay(d){
+  document.querySelectorAll("#days button").forEach(b=>{ const on=b.dataset.d===d; b.setAttribute("aria-selected",on); if(on) moveInd(b); });
+  const list=TIMETABLE[d];
+  $("#sessions").innerHTML = list.length ? list.map((s,i)=>`
+    <div class="session" style="animation-delay:${i*70}ms"><time>${esc(s.t)}</time>
+    <div><h4>${esc(s.c)}</h4>${s.d?`<p>${esc(s.d)}</p>`:""}</div>${s.l?`<span class="level">${esc(s.l)}</span>`:"<span></span>"}</div>`).join("")
+    : `<div class="empty">Rest day. No classes today.</div>`;
+}
+$("#days").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) renderDay(b.dataset.d); });
+renderDay(today);
+window.__renderDay=renderDay; window.__today=today;
+addEventListener("resize", ()=>{ const b=document.querySelector('#days button[aria-selected="true"]'); if(b) moveInd(b); });
+document.fonts && document.fonts.ready.then(()=>{ const b=document.querySelector('#days button[aria-selected="true"]'); if(b) moveInd(b); });
+
+// nav, progress bar, parallax
+const hero=$(".hero"), heroBg=$("#heroBg"), nav=$("#nav"), links=$("#links"), burger=$("#burger"), bar=$("#progress"), wm=$("#wm");
+function onScroll(){
+  const y=scrollY, h=document.documentElement.scrollHeight-innerHeight;
+  nav.classList.toggle("scrolled", y>20);
+  bar.style.transform=`scaleX(${h>0?y/h:0})`;
+  const f=Math.max(0,Math.min(1,1-y/(hero.offsetHeight*1.1)));
+  heroBg.style.setProperty("--fade",f.toFixed(3)); heroBg.style.visibility=f<=0?"hidden":"visible";
+  const r=wm.parentElement.getBoundingClientRect();
+  wm.style.setProperty("--py", ((r.top+r.height/2-innerHeight/2)*-.15).toFixed(1)+"px");
+}
+addEventListener("scroll",onScroll,{passive:true}); onScroll();
+burger.addEventListener("click",()=>{const o=links.classList.toggle("open");burger.setAttribute("aria-expanded",o);});
+links.addEventListener("click",e=>{ if(e.target.closest("a")){links.classList.remove("open");burger.setAttribute("aria-expanded",false);} });
+
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// reveal: elements below the fold slide up into place (they stay visible)
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove("pending"); io.unobserve(e.target);} }),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>{ if(el.getBoundingClientRect().top>innerHeight){ el.classList.add("pending"); io.observe(el);} });
+const io2=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ document.querySelectorAll(".step").forEach((s,i)=>setTimeout(()=>s.classList.add("lit"),i*250)); io2.disconnect(); } }),{threshold:.3});
+io2.observe(document.querySelector(".steps"));
+
+// map
+(function(){
+  const box=$("#map");
+  if(!window.L){ box.innerHTML='<p style="padding:24px;color:var(--ink-2)">The map could not load. Use “Get directions” instead.</p>'; return; }
+  const map=L.map(box,{center:[CLUB.lat,CLUB.lng],zoom:15,scrollWheelZoom:false,zoomControl:true,minZoom:TILE_OPTS.minZoom,maxZoom:TILE_OPTS.maxZoom,maxBounds:TILE_OPTS.bounds,maxBoundsViscosity:.8});
+  const Layer = window.TILES ? L.TileLayer.extend({getTileUrl(c){ return TILES[c.z+"/"+c.x+"/"+c.y] || "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="; }}) : L.TileLayer;
+  new Layer(TILE_URL,{minZoom:TILE_OPTS.minZoom,maxZoom:TILE_OPTS.maxZoom,attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'}).addTo(map);
+  const icon=L.divIcon({className:"",iconSize:[44,56],iconAnchor:[22,54],popupAnchor:[0,-50],
+    html:'<div class="pin"><span class="pulse"></span><svg viewBox="0 0 44 56"><path d="M22 2C11 2 3 10.4 3 21c0 13.6 19 33 19 33s19-19.4 19-33C41 10.4 33 2 22 2z" fill="#f6f8fc" stroke="#04060b" stroke-width="2"/><circle cx="22" cy="21" r="9" fill="#0f1d3a"/><circle cx="22" cy="21" r="4" fill="#4f7bff"/></svg></div>'});
+  const marker=L.marker([CLUB.lat,CLUB.lng],{icon,title:"Northern Spirit Muay Thai",keyboard:true}).addTo(map)
+    .bindPopup('<b>Northern Spirit</b>Muay Thai · Sale M33 4QW<br><a href="https://www.google.com/maps/dir/?api=1&destination='+CLUB.lat+','+CLUB.lng+'" target="_blank" rel="noopener">Get directions →</a>');
+  window.__setPin=(lat,lng)=>{ if(!isFinite(lat)||!isFinite(lng)) return; CLUB.lat=lat; CLUB.lng=lng; marker.setLatLng([lat,lng]); map.setView([lat,lng],map.getZoom());
+    marker.setPopupContent('<b>Northern Spirit</b>Muay Thai · Sale M33 4QW<br><a href="https://www.google.com/maps/dir/?api=1&destination='+lat+','+lng+'" target="_blank" rel="noopener">Get directions →</a>'); };
+  if(window.__pendingPin){ window.__setPin(...window.__pendingPin); }
+  map.on("click focus",()=>{ map.scrollWheelZoom.enable(); $("#mapHint").style.opacity=0; });
+  map.on("mouseout",()=>map.scrollWheelZoom.disable());
+  $("#recenter").addEventListener("click",()=>{ map.flyTo([CLUB.lat,CLUB.lng],16,{duration:1}); marker.openPopup(); });
+  // gentle fly-in the first time the map scrolls into view
+  const mo=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ map.invalidateSize(); if(!reduce) map.flyTo([CLUB.lat,CLUB.lng],16,{duration:1.6}); setTimeout(()=>marker.openPopup(), reduce?0:1700); mo.disconnect(); } },{threshold:.4});
+  mo.observe(box);
+})();
+$("#yr").textContent=new Date().getFullYear();
+</script>
+<script>
+/* ======================================================================
+   OWNER AREA + LIVE CONTENT
+   Live site: content, photos and the access code are kept by the site's
+   own server (/api, Netlify Functions + Netlify Blobs).
+   Preview link: content is kept in the claude.ai link's own storage.
+   ====================================================================== */
+(function(){
+const CODE_KEY = "northern_spirit_admin_code";
+const ORIGINAL_COLLAGE = "hero-1789857076043";   // the collage already split into the hero photos
+const DAYS = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+const SHORT = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const LOCK = '<svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+const X = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>';
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hm = t => String(t || "").slice(0,5);
+
+const PREVIEW_ONLY = false;   // true on the claude.ai preview link: edits save to the link's own storage
+const TABLE_KEY = { northern_spirit_classes:"classes", northern_spirit_timetable:"timetable", northern_spirit_coaches:"coaches", northern_spirit_kit:"kit", northern_spirit_faqs:"faqs" };
+const byOrder = (x, y) => (Number(x.sort_order) || 0) - (Number(y.sort_order) || 0);
+const clean = o => JSON.parse(JSON.stringify(o, (k, v) => v === undefined ? null : v));
+const rid = () => (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
+
+/* Storage backends. "api" = the live site's own server. "artifact" = the preview link's own store. */
+const B = { mode: (!PREVIEW_ONLY && /^https?:$/.test(location.protocol)) ? "api" : "none", cdb:null, user:null, assets:null, canEdit:false };
+const ready = (async () => {
+  if (!PREVIEW_ONLY || !window.claude || !window.claude.use) return;
+  try {
+    B.cdb = await window.claude.use("db");
+    B.user = await window.claude.use("user");
+    try { B.assets = await window.claude.use("assets"); } catch (e) { B.assets = null; }
+    if (B.cdb){ B.mode = "artifact"; B.canEdit = B.user ? !!(await B.user.canEdit()) : false; }
+  } catch (e) { B.mode = "none"; }
+})();
+
+/* live-site server calls */
+async function api(path, opts = {}){
+  const r = await fetch("/api" + path, { ...opts, headers: { "content-type": "application/json", ...(opts.headers || {}) } });
+  let j = null; try { j = await r.json(); } catch (e) {}
+  if (!r.ok){ const err = new Error((j && j.error) || ("HTTP " + r.status)); err.status = r.status; throw err; }
+  return j;
+}
+let CONTENT = null, inflight = null;
+const getContent = fresh => {
+  if (CONTENT && !fresh) return Promise.resolve(CONTENT);
+  if (!inflight) inflight = api("/content").then(j => { CONTENT = (j && j.content) || {}; inflight = null; return CONTENT; }).catch(e => { inflight = null; throw e; });
+  return inflight;
+};
+const saveAll = async () => {
+  try { await api("/save", { method:"POST", body: JSON.stringify({ code, content: CONTENT }) }); return true; }
+  catch (e) { await getContent(true).catch(() => {}); if (e.status === 401) return false; throw e; }
+};
+
+B.loadSite = async () => {
+  if (B.mode === "api"){ const c = await getContent(true); return c.site ? { ...c.site } : null; }
+  const s = await B.cdb.doc("site/main").get(); return s.exists ? { ...s.data() } : null;
+};
+B.loadTable = async table => {
+  if (B.mode === "api"){ const c = await getContent(); return (c[TABLE_KEY[table]] || []).map(r => ({ ...r })).sort(byOrder); }
+  const s = await B.cdb.collection(TABLE_KEY[table]).get(); return s.docs.map(d => ({ ...d.data(), id: d.id })).sort(byOrder);
+};
+B.saveSite = async content => {
+  if (B.mode === "api"){ await getContent(); CONTENT.site = clean({ ...content, id:"main" }); return saveAll(); }
+  await B.cdb.doc("site/main").set(clean({ ...content, id:"main" })); return true;
+};
+B.upsert = async (cfg, row) => {
+  if (B.mode === "api"){
+    await getContent(); const key = TABLE_KEY[cfg.table], rows = CONTENT[key] || (CONTENT[key] = []), r = clean(row);
+    if (!r.id) r.id = rid();
+    const i = rows.findIndex(x => String(x.id) === String(r.id)); if (i >= 0) rows[i] = r; else rows.push(r);
+    return saveAll();
+  }
+  const col = B.cdb.collection(TABLE_KEY[cfg.table]), { id, ...body } = row;
+  await (id ? col.doc(String(id)) : col.doc()).set(clean(body)); return true;
+};
+B.remove = async (cfg, id) => {
+  if (B.mode === "api"){ await getContent(); const key = TABLE_KEY[cfg.table]; CONTENT[key] = (CONTENT[key] || []).filter(x => String(x.id) !== String(id)); if (!(await saveAll())) throw new Error("not saved"); return true; }
+  await B.cdb.collection(TABLE_KEY[cfg.table]).doc(String(id)).delete(); return true;
+};
+B.upload = async (file) => {
+  if (B.mode === "api"){
+    const r = await fetch("/api/upload", { method:"POST", headers: { "x-access-code": code, "content-type": file.type || "application/octet-stream" }, body: file });
+    const j = await r.json().catch(() => null); if (!r.ok || !j || !j.url) throw new Error("upload failed"); return j.url;
+  }
+  if (!B.assets) throw new Error("no uploads");
+  const r = await B.assets.upload(file); return "/_blob/" + r.id;
+};
+
+const store = {
+  get(){ try { return sessionStorage.getItem(CODE_KEY); } catch (e) { return null; } },
+  set(v){ try { sessionStorage.setItem(CODE_KEY, v); } catch (e) {} },
+  del(){ try { sessionStorage.removeItem(CODE_KEY); } catch (e) {} }
+};
+
+function photoFor(name){
+  const n = String(name || "").toLowerCase();
+  if (n.includes("kid") || n.includes("child")) return PHOTOS.kids;
+  if (n.includes("teen")) return PHOTOS.teens;
+  if (n.includes("junior") || n.includes("youth")) return PHOTOS.juniors;
+  if (n.includes("women") || n.includes("ladies") || n.includes("female")) return PHOTOS.women;
+  return PHOTOS.adults;
+}
+const setText = (id, v) => { const el = document.getElementById(id); if (el && v) el.textContent = v; };
+const paras = t => String(t).split(/\n\s*\n/).map(p => `<p>${esc(p.trim()).replace(/\n/g,"<br>")}</p>`).join("");
+
+/* ---------- what the page shows before any saved content (used to fill the owner area) ---------- */
+const txt = id => { const e = document.getElementById(id); return e ? e.textContent.trim() : ""; };
+const DEFAULTS = {
+  eyebrow: txt("heroEyebrow"), hero_title: [...document.querySelectorAll("#heroTitle .ln")].map(e => e.textContent.trim()).join(" "),
+  hero_text: txt("heroText"), primary_cta: txt("ctaPrimary"), secondary_cta: txt("ctaSecondary"), hero_image_url: "", hero_image_pos: "center", hero_image_scale: 100,
+  ticker_words: [...new Set([...document.querySelectorAll("#tickerTrack span")].map(s => s.textContent.trim()))].join(", "),
+  classes_lead: txt("classesLead"), timetable_lead: txt("ttLead"), coaches_lead: txt("coachesLead"), kit_lead: txt("kitLead"), faq_lead: txt("faqLead"),
+  about_eyebrow: txt("aboutEyebrow"), about_title: txt("aboutTitle"), about_title_accent: txt("aboutAccent"),
+  about_text: [...document.querySelectorAll("#aboutText p")].map(p => p.textContent.trim()).join("\n\n"),
+  value1_title: txt("value1Title"), value1_text: txt("value1Text"), value2_title: txt("value2Title"), value2_text: txt("value2Text"),
+  value3_title: txt("value3Title"), value3_text: txt("value3Text"), value4_title: txt("value4Title"), value4_text: txt("value4Text"),
+  steps_lead: txt("stepsLead"), step1_title: txt("step1Title"), step1_text: txt("step1Text"), step2_title: txt("step2Title"), step2_text: txt("step2Text"), step3_title: txt("step3Title"), step3_text: txt("step3Text"),
+  visit_heading: txt("visitHeading"), visit_text: txt("visitText"), address: "Northern Spirit Muay Thai, Sale M33 4QW", visit_address_sub: "Greater Manchester",
+  phone: "", email: "", hours: "Open for scheduled classes.", visit_hours_sub: "See the timetable above.",
+  map_lat: String(CLUB.lat), map_lng: String(CLUB.lng),
+  cta_title: txt("ctaTitle"), cta_text: txt("ctaText"),
+  social_instagram: "", social_facebook: "", social_whatsapp: "", club_name: "Northern Spirit"
+};
+const STARTER = {
+  northern_spirit_classes: CLASSES.map((c,i) => ({ name:c.name, tagline:"", description:c.desc, schedule:"", level:c.tag, image_url:"", accent:"navy", sort_order:i+1, is_active:true })),
+  northern_spirit_timetable: Object.entries(TIMETABLE).flatMap(([d,list]) => list.map(s => { const [st,en] = s.t.split(/\s*[–-]\s*/); return { day_of_week:SHORT.indexOf(d), start_time:st, end_time:en, class_name:s.c }; }))
+    .map((s,i) => ({ ...s, sort_order:i+1, is_active:true })),
+  northern_spirit_kit: KIT.map((k,i) => ({ name:k.name, description:k.desc + (k.free ? " " + k.free : ""), category:/short|shirt|top|cloth/i.test(k.name) ? "clothing" : "equipment", image_url:"", sort_order:i+1, is_active:true })),
+  northern_spirit_faqs: FAQS.map((f,i) => ({ question:f.q, answer:f.a, sort_order:i+1, is_active:true })),
+  northern_spirit_coaches: []
+};
+const filled = o => { const out = { ...DEFAULTS }; Object.entries(o || {}).forEach(([k,v]) => { if (v !== null && v !== undefined && v !== "") out[k] = v; }); return out; };
+
+/* ---------- public page: apply saved content ---------- */
+function applySite(s){
+  if (!s) return;
+  setText("heroEyebrow", s.eyebrow);
+  if (s.hero_title){
+    const lines = s.hero_title.split(/(?<=[.!?])\s+/).filter(Boolean).slice(0,4);
+    $("#heroTitle").innerHTML = lines.map((l,i) => {
+      let inner = esc(l);
+      if (lines.length > 1 && i === lines.length - 1){ const w = l.split(" "); const last = w.pop(); inner = (w.length ? esc(w.join(" ")) + " " : "") + `<span class="blue">${esc(last)}</span>`; }
+      return `<span class="ln"><span${lines.length > 2 && i === 1 ? ' class="outline"' : ""}>${inner}</span></span>`;
+    }).join("");
+  }
+  setText("heroText", s.hero_text);
+  setText("ctaPrimary", s.primary_cta);
+  setText("ctaSecondary", s.secondary_cta);
+  if (s.hero_image_url && !s.hero_image_url.includes(ORIGINAL_COLLAGE)){
+    const bg = $("#heroBg");
+    bg.style.gridTemplateColumns = "1fr"; bg.style.gridTemplateRows = "1fr";
+    bg.innerHTML = `<figure><img src="${esc(s.hero_image_url)}" alt="" style="object-position:${esc(s.hero_image_pos || "center")};transform:scale(${(Number(s.hero_image_scale) || 100) / 100})"></figure>`;
+  }
+  setText("aboutEyebrow", s.about_eyebrow);
+  setText("aboutTitle", s.about_title);
+  setText("aboutAccent", s.about_title_accent);
+  if (s.about_text) $("#aboutText").innerHTML = paras(s.about_text);
+  setText("visitHeading", s.visit_heading);
+  setText("visitText", s.visit_text);
+  if (s.address) $("#addrText").innerHTML = esc(s.address) + (s.visit_address_sub ? "<br>" + esc(s.visit_address_sub) : "");
+  if (s.phone || s.email){
+    $("#contactText").innerHTML = [s.phone && `<a href="tel:${esc(s.phone.replace(/\s/g,""))}">${esc(s.phone)}</a>`, s.email && `<a href="mailto:${esc(s.email)}">${esc(s.email)}</a>`].filter(Boolean).join("<br>");
+  }
+  if (s.hours) $("#hoursText").innerHTML = esc(s.hours) + (s.visit_hours_sub ? "<br>" + esc(s.visit_hours_sub) : "");
+  [["classesLead","classes_lead"],["ttLead","timetable_lead"],["coachesLead","coaches_lead"],["kitLead","kit_lead"],["faqLead","faq_lead"],["stepsLead","steps_lead"],
+   ["value1Title","value1_title"],["value1Text","value1_text"],["value2Title","value2_title"],["value2Text","value2_text"],["value3Title","value3_title"],["value3Text","value3_text"],["value4Title","value4_title"],["value4Text","value4_text"],
+   ["step1Title","step1_title"],["step1Text","step1_text"],["step2Title","step2_title"],["step2Text","step2_text"],["step3Title","step3_title"],["step3Text","step3_text"],
+   ["ctaTitle","cta_title"],["ctaText","cta_text"]].forEach(([id,k]) => setText(id, s[k]));
+  if (s.ticker_words){
+    const w = String(s.ticker_words).split(",").map(x => x.trim()).filter(Boolean);
+    if (w.length){ const one = w.map(x => `<span>${esc(x)}</span>`).join(""); $("#tickerTrack").innerHTML = one + one; }
+  }
+  const lat = parseFloat(s.map_lat), lng = parseFloat(s.map_lng);
+  if (isFinite(lat) && isFinite(lng) && (lat !== CLUB.lat || lng !== CLUB.lng)){
+    if (window.__setPin) window.__setPin(lat, lng); else window.__pendingPin = [lat, lng];
+    const d = $("#dirLink"); if (d) d.href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+  }
+  const soc = [["Instagram", s.social_instagram], ["Facebook", s.social_facebook], ["WhatsApp", s.social_whatsapp]].filter(x => x[1]);
+  $("#socials").innerHTML = soc.map(([n,u]) => `<li><a href="${esc(/^https?:/.test(u) ? u : "https://" + u)}" target="_blank" rel="noopener">${n}</a></li>`).join("");
+}
+
+function renderCoaches(list){
+  const sec = $("#coaches"), nav = $("#navCoaches");
+  sec.hidden = nav.hidden = !list.length;
+  $("#coachGrid").innerHTML = list.map(c => `
+    <article class="coach"><div class="ph">${c.image_url ? `<img src="${esc(c.image_url)}" alt="${esc(c.name)}" loading="lazy">` : `<span>${esc((c.name || "?")[0])}</span>`}</div>
+    <small>${esc(c.role || "Coach")}</small><h3>${esc(c.name)}</h3>${c.bio ? `<p>${esc(c.bio)}</p>` : ""}</article>`).join("");
+}
+
+async function loadPublic(){
+  await ready;
+  if (B.mode === "none") return;
+  try {
+    const q = t => B.loadTable(t).then(data => ({ data })).catch(() => ({ data: [] }));
+    const [site, classes, coaches, faqs, tt, kit] = await Promise.all([
+      B.loadSite().then(data => ({ data })).catch(() => ({ data: null })),
+      q("northern_spirit_classes"), q("northern_spirit_coaches"), q("northern_spirit_faqs"), q("northern_spirit_timetable"), q("northern_spirit_kit")
+    ]);
+    const live = r => ((r && r.data) || []).filter(x => x.is_active !== false);
+    if (site && site.data) applySite(site.data);
+    const c = live(classes);
+    if (c.length){ CLASSES = c.map(x => ({ name:x.name, img:x.image_url || photoFor(x.name), desc:x.description || x.tagline || "", tag:x.level || "All levels", when:x.schedule || "" })); renderClasses(); }
+    renderCoaches(live(coaches));
+    const f = live(faqs);
+    if (f.length){ FAQS = f.map(x => ({ q:x.question, a:x.answer })); renderFaqs(); }
+    const k = live(kit);
+    if (k.length){ KIT = k.map(x => ({ name:x.name, desc:x.description || "" })); renderKit(); }
+    const s = live(tt);
+    if (s.length){
+      const lvl = {}; c.forEach(x => lvl[(x.name || "").toLowerCase()] = x.level || "");
+      const t = {}; SHORT.forEach(d => t[d] = []);
+      s.slice().sort((a,b) => hm(a.start_time).localeCompare(hm(b.start_time))).forEach(x => {
+        const d = SHORT[x.day_of_week] || "Mon";
+        t[d].push({ t:`${hm(x.start_time)} – ${hm(x.end_time)}`, c:x.class_name, d:"", l:lvl[(x.class_name || "").toLowerCase()] || "" });
+      });
+      TIMETABLE = t;
+      const cur = document.querySelector('#days button[aria-selected="true"]');
+      window.__renderDay(cur ? cur.dataset.d : window.__today);
+    }
+  } catch (e) { /* keep the starter content */ }
+}
+
+/* ---------- owner area ---------- */
+const TABS = {
+  classes:{ table:"northern_spirit_classes", rpc:"class", param:"p_class", title:"Classes", noun:"class",
+    blank:() => ({ name:"", tagline:"", description:"", schedule:"", level:"All levels", image_url:"", accent:"navy", is_active:true }),
+    fields:[["name","Class name"],["level","Level / tag"],["tagline","Short tagline"],["schedule","When it runs (e.g. Mon & Wed, 6pm)"],["description","Description","textarea","full"],["image_url","Photo","image","full"]],
+    label:r => r.name, sub:r => [r.level, r.schedule].filter(Boolean).join(" · "), img:r => r.image_url || photoFor(r.name) },
+  timetable:{ table:"northern_spirit_timetable", rpc:"session", param:"p_session", title:"Timetable", noun:"session",
+    blank:() => ({ day_of_week:0, start_time:"18:00", end_time:"19:00", class_name:"", is_active:true }),
+    fields:[["class_name","Class name","text","full"],["day_of_week","Day","day"],["start_time","Start time","time"],["end_time","End time","time"]],
+    label:r => r.class_name, sub:r => `${DAYS[r.day_of_week] || ""} · ${hm(r.start_time)} – ${hm(r.end_time)}`, thumb:r => SHORT[r.day_of_week] || "" },
+  coaches:{ table:"northern_spirit_coaches", rpc:"coach", param:"p_coach", title:"Coaches", noun:"coach",
+    blank:() => ({ name:"", role:"Coach", bio:"", image_url:"", is_active:true }),
+    fields:[["name","Name"],["role","Role"],["bio","Bio","textarea","full"],["image_url","Photo","image","full"]],
+    label:r => r.name, sub:r => r.role, img:r => r.image_url },
+  kit:{ table:"northern_spirit_kit", rpc:"kit", param:"p_kit", title:"Kit", noun:"item",
+    blank:() => ({ name:"", description:"", category:"equipment", image_url:"", is_active:true }),
+    fields:[["name","Item name"],["category","Category","select"],["description","Description","textarea","full"],["image_url","Photo","image","full"]],
+    label:r => r.name, sub:r => r.category === "clothing" ? "Clothing" : "Equipment", img:r => r.image_url },
+  faqs:{ table:"northern_spirit_faqs", rpc:"faq", param:"p_faq", title:"FAQs", noun:"question",
+    blank:() => ({ question:"", answer:"", is_active:true }),
+    fields:[["question","Question","text","full"],["answer","Answer","textarea","full"]],
+    label:r => r.question, sub:r => r.answer, thumb:() => "?" }
+};
+const SITE_FIELDS = [
+  ["Top of the page"], ["eyebrow","Small heading above the title"], ["hero_title","Main title (each sentence goes on its own line)"], ["hero_text","Intro text","textarea","full"],
+  ["primary_cta","Main button text"], ["secondary_cta","Second button text"], ["hero_image_url","Background image (leave empty to use the club photo grid)","image","full"],
+  ["hero_image_pos","Image position","pos"], ["hero_image_scale","Image zoom (%)","scale"],
+  ["ticker_words","Scrolling words under the top section (separate with commas)","text","full"],
+  ["Section intros"], ["classes_lead","Classes intro","text","full"], ["timetable_lead","Timetable intro","text","full"], ["coaches_lead","Coaches intro","text","full"],
+  ["kit_lead","Kit intro","textarea","full"], ["faq_lead","FAQs intro","text","full"],
+  ["About"], ["about_eyebrow","Small heading"], ["about_title","Title"], ["about_title_accent","Title, second line"], ["about_text","About text (blank line between paragraphs)","textarea","full"],
+  ["value1_title","Value 1"], ["value1_text","Value 1 text"], ["value2_title","Value 2"], ["value2_text","Value 2 text"],
+  ["value3_title","Value 3"], ["value3_text","Value 3 text"], ["value4_title","Value 4"], ["value4_text","Value 4 text"],
+  ["Your first session"], ["steps_lead","Section intro","text","full"], ["step1_title","Step 1"], ["step1_text","Step 1 text"],
+  ["step2_title","Step 2"], ["step2_text","Step 2 text"], ["step3_title","Step 3"], ["step3_text","Step 3 text"],
+  ["Find us & contact"], ["visit_heading","Section title"], ["visit_text","Section intro"], ["address","Address"], ["visit_address_sub","Address, second line"],
+  ["phone","Phone"], ["email","Email"], ["hours","Opening hours"], ["visit_hours_sub","Opening hours, second line"],
+  ["map_lat","Map pin latitude"], ["map_lng","Map pin longitude"],
+  ["Closing banner"], ["cta_title","Heading"], ["cta_text","Text","text","full"],
+  ["Social links"], ["social_instagram","Instagram link"], ["social_facebook","Facebook link"], ["social_whatsapp","WhatsApp link"],
+  ["Club"], ["club_name","Club name"]
+];
+
+let code = store.get(), tab = "site", rows = [], editing = null, siteData = null;
+const root = document.createElement("div");
+root.className = "admin"; root.id = "admin"; root.hidden = true;
+root.setAttribute("role","dialog"); root.setAttribute("aria-modal","true"); root.setAttribute("aria-labelledby","adminTitle");
+document.body.appendChild(root);
+
+async function open(){
+  root.hidden = false; document.body.classList.add("admin-open");
+  if (!PREVIEW_ONLY){ code ? showPanel() : showLogin(); return; }
+  root.innerHTML = `<div class="panel small">${head("Owner area")}<div class="panel-body"><p class="muted">Checking your access…</p></div></div>`;
+  root.querySelector('[data-act="close"]').onclick = close;
+  await ready;
+  if (B.mode === "artifact" && B.canEdit) showPanel(); else showNoAccess();
+}
+function showNoAccess(){
+  root.innerHTML = `<div class="panel small">${head("Owner area")}<div class="panel-body">
+    <div class="lockbig">${LOCK}</div>
+    <p>Only the site's owner and editors can change this page.</p>
+    <p class="muted" style="margin-top:10px">${B.mode === "none" ? "Open this page signed in to Claude to edit it." : "If you should have access, ask the owner to add you as an Editor from the Share menu."}</p></div></div>`;
+  root.querySelector('[data-act="close"]').onclick = close;
+}
+function close(){
+  root.hidden = true; document.body.classList.remove("admin-open");
+  if (location.hash === "#admin") { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+}
+document.addEventListener("click", e => { const a = e.target.closest('a[href="#admin"]'); if (a){ e.preventDefault(); open(); } });
+root.addEventListener("click", e => { if (e.target === root) close(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !root.hidden) close(); });
+addEventListener("hashchange", () => { if (location.hash === "#admin") open(); });
+if (location.hash === "#admin") open();
+
+const head = (title, extra = "") => `<div class="panel-head"><h2 id="adminTitle">${LOCK}${title}</h2><div style="display:flex;gap:8px;align-items:center">${extra}<button class="x" data-act="close" aria-label="Close owner area">${X}</button></div></div>`;
+const msg = (el, kind, text) => { el.innerHTML = text ? `<div class="msg ${kind}" role="status">${esc(text)}</div>` : ""; };
+const busy = (btn, on, label) => { btn.disabled = on; if (on){ btn.dataset.label = btn.innerHTML; btn.innerHTML = `<span class="spin"></span>${label}`; } else if (btn.dataset.label) btn.innerHTML = btn.dataset.label; };
+
+function showLogin(){
+  root.innerHTML = `<div class="panel small">${head("Owner login")}<div class="panel-body">
+    <div class="lockbig">${LOCK}</div>
+    <p class="muted">Enter your club access code to edit the website.</p>
+    <form id="loginForm" style="margin-top:18px;display:grid;gap:14px">
+      <div class="field"><label for="accessCode">Access code</label><input id="accessCode" type="password" autocomplete="current-password" placeholder="Enter your code" required></div>
+      <button class="abtn primary" type="submit" id="loginBtn" ${B.mode === "api" ? "" : "disabled"}>Sign in</button>
+    </form>
+    <div id="loginMsg"></div>
+    <p class="muted" style="margin-top:18px">Club owners only. Members don't need to sign in.</p></div></div>`;
+  root.querySelector('[data-act="close"]').onclick = close;
+  const m = $("#loginMsg");
+  if (B.mode !== "api") msg(m, "info", "Owner editing works on the live website.");
+  setTimeout(() => { const i = $("#accessCode"); if (i) i.focus(); }, 50);
+  $("#loginForm").onsubmit = async e => {
+    e.preventDefault();
+    const v = $("#accessCode").value.trim(); if (!v || B.mode !== "api") return;
+    const b = $("#loginBtn"); busy(b, true, "Checking…"); msg(m);
+    try {
+      await api("/login", { method:"POST", body: JSON.stringify({ code: v }) });
+      code = v; store.set(v); showPanel();
+    } catch (err) {
+      if (err.status === 401) msg(m, "err", "That code wasn't recognised. Check it and try again.");
+      else if (err.status === 429) msg(m, "err", "Too many wrong codes. Wait 15 minutes, then try again.");
+      else msg(m, "err", "Couldn't check the code right now. Check your connection and try again.");
+    }
+    finally { if (document.body.contains(b)) busy(b, false); }
+  };
+}
+
+function showPanel(){
+  const names = { site:"Site", classes:"Classes", timetable:"Timetable", coaches:"Coaches", kit:"Kit", faqs:"FAQs" };
+  if (!PREVIEW_ONLY) names.security = "Security";
+  if (PREVIEW_ONLY && tab === "security") tab = "site";
+  root.innerHTML = `<div class="panel">${head("Owner area", PREVIEW_ONLY ? "" : `<button class="abtn sm" data-act="logout">Sign out</button>`)}
+    ${PREVIEW_ONLY ? `<div class="msg info" style="margin:16px 24px 0">Edits here save to this preview link only. Your live Bolt site keeps its own content, edited from its own owner area.</div>` : ""}
+    <div class="tabs" role="tablist">${Object.entries(names).map(([k,n]) => `<button role="tab" data-tab="${k}" aria-selected="${k === tab}">${n}</button>`).join("")}</div>
+    <div class="panel-body" id="tabBody"></div></div>`;
+  root.querySelector('[data-act="close"]').onclick = close;
+  const lo = root.querySelector('[data-act="logout"]'); if (lo) lo.onclick = () => { code = null; store.del(); showLogin(); };
+  root.querySelector(".tabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; tab = b.dataset.tab; editing = null; showPanel(); };
+  if (tab === "site") siteTab(); else if (tab === "security") securityTab(); else listTab(TABS[tab]);
+}
+
+function fieldHTML(f, val){
+  const [key, label, type = "text", span] = f, id = "f_" + key, cls = span === "full" || type === "textarea" || type === "image" ? "field full" : "field";
+  if (type === "textarea") return `<div class="${cls}"><label for="${id}">${label}</label><textarea id="${id}" data-k="${key}">${esc(val)}</textarea></div>`;
+  if (type === "day") return `<div class="${cls}"><label for="${id}">${label}</label><select id="${id}" data-k="${key}" data-num="1">${DAYS.map((d,i) => `<option value="${i}" ${Number(val) === i ? "selected" : ""}>${d}</option>`).join("")}</select></div>`;
+  if (type === "select") return `<div class="${cls}"><label for="${id}">${label}</label><select id="${id}" data-k="${key}"><option value="equipment" ${val !== "clothing" ? "selected" : ""}>Equipment</option><option value="clothing" ${val === "clothing" ? "selected" : ""}>Clothing</option></select></div>`;
+  if (type === "time") return `<div class="${cls}"><label for="${id}">${label}</label><input id="${id}" type="time" data-k="${key}" value="${esc(hm(val))}"></div>`;
+  if (type === "pos") return `<div class="${cls}"><label>${label}</label><div class="seg" data-seg="${key}">${["top","center","bottom"].map(p => `<button type="button" data-v="${p}" aria-pressed="${(val || "center") === p}">${p[0].toUpperCase() + p.slice(1)}</button>`).join("")}</div><input type="hidden" id="${id}" data-k="${key}" value="${esc(val || "center")}"></div>`;
+  if (type === "scale") return `<div class="${cls}"><label for="${id}">${label}: <span id="${id}_v">${val || 100}</span>%</label><input id="${id}" type="range" min="100" max="160" step="5" data-k="${key}" data-num="1" value="${esc(val || 100)}"></div>`;
+  if (type === "image") return `<div class="${cls}"><label for="${id}">${label}</label><div class="imgrow"><input id="${id}" type="text" data-k="${key}" value="${esc(val)}" placeholder="Paste an image link or upload a photo"><button type="button" class="abtn sm" data-up="${key}">Upload photo</button><input type="file" accept="image/*" hidden id="${id}_file"></div><div class="imgprev" id="${id}_prev" ${val ? "" : "hidden"}>${val ? `<img src="${esc(val)}" alt="Preview">` : ""}</div></div>`;
+  return `<div class="${cls}"><label for="${id}">${label}</label><input id="${id}" type="text" data-k="${key}" value="${esc(val)}"></div>`;
+}
+function wireFields(scope, prefix){
+  scope.querySelectorAll("[data-seg]").forEach(seg => seg.onclick = e => {
+    const b = e.target.closest("button"); if (!b) return;
+    seg.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    scope.querySelector("#f_" + seg.dataset.seg).value = b.dataset.v;
+  });
+  scope.querySelectorAll('input[type="range"]').forEach(r => r.oninput = () => { const s = scope.querySelector("#" + r.id + "_v"); if (s) s.textContent = r.value; });
+  scope.querySelectorAll("[data-up]").forEach(btn => {
+    const key = btn.dataset.up, file = scope.querySelector("#f_" + key + "_file"), input = scope.querySelector("#f_" + key), prev = scope.querySelector("#f_" + key + "_prev");
+    const show = () => { prev.hidden = !input.value; prev.innerHTML = input.value ? `<img src="${esc(input.value)}" alt="Preview">` : ""; };
+    input.oninput = show;
+    btn.onclick = () => file.click();
+    file.onchange = async () => {
+      const f = file.files && file.files[0]; file.value = ""; if (!f) return;
+      busy(btn, true, "Uploading…");
+      try { input.value = await B.upload(f, prefix); show(); } catch (e) { alertIn(scope, "Couldn't upload that photo. Try a smaller JPG or PNG."); }
+      finally { busy(btn, false); }
+    };
+  });
+}
+function alertIn(scope, text){ const m = scope.querySelector(".form-msg"); if (m) msg(m, "err", text); }
+function collect(scope, base){
+  const out = { ...base };
+  scope.querySelectorAll("[data-k]").forEach(el => { out[el.dataset.k] = el.dataset.num ? Number(el.value) : el.value; });
+  return out;
+}
+
+async function siteTab(){
+  const body = $("#tabBody");
+  body.innerHTML = `<p class="muted">Loading…</p>`;
+  try {
+    siteData = filled(await B.loadSite()); siteData.id = "main";
+  } catch (e) { body.innerHTML = `<div class="msg err">Couldn't load the site text. Close this and try again.</div>`; return; }
+  body.innerHTML = `<p class="muted" style="margin-bottom:18px">Everything below is what the page shows now. Change any of it and save.</p>
+    <div class="form">${SITE_FIELDS.map(f => f.length === 1 ? `<div class="section-title">${f[0]}</div>` : fieldHTML(f, siteData[f[0]])).join("")}</div>
+    <div class="row-actions"><button class="abtn primary" id="saveSite">Save changes</button></div><div class="form-msg"></div>`;
+  wireFields(body, "hero");
+  $("#saveSite").onclick = async () => {
+    const b = $("#saveSite"), m = body.querySelector(".form-msg"), content = collect(body, siteData);
+    busy(b, true, "Saving…"); msg(m);
+    try {
+      if (await B.saveSite(content)){ siteData = content; applySite(content); msg(m, "ok", "Saved. The public page is updated."); }
+      else msg(m, "err", "Not saved. Your access code may have changed. Sign out and sign in again.");
+    } catch (e) { msg(m, "err", "Couldn't save. Check your connection and try again."); }
+    finally { busy(b, false); }
+  };
+}
+
+async function listTab(cfg){
+  const body = $("#tabBody");
+  body.innerHTML = `<p class="muted">Loading…</p>`;
+  try {
+    rows = await B.loadTable(cfg.table);
+  } catch (e) { body.innerHTML = `<div class="msg err">Couldn't load ${cfg.title.toLowerCase()}. Close this and try again.</div>`; return; }
+  const editor = editing ? `<div class="editor"><h3>${editing.id ? "Edit " + cfg.noun : "Add a " + cfg.noun}</h3>
+      <div class="form">${cfg.fields.map(f => fieldHTML(f, editing[f[0]])).join("")}</div>
+      <div class="row-actions"><button class="abtn primary" data-act="save">Save</button><button class="abtn" data-act="cancel">Cancel</button></div><div class="form-msg"></div></div>` : "";
+  body.innerHTML = `${editor}
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+      <p class="muted">${rows.length ? `${rows.length} ${rows.length === 1 ? cfg.noun : cfg.title.toLowerCase()} · hidden ones don't show on the public page` : (STARTER[cfg.table] || []).length ? `Nothing saved yet. Load what the page shows now to edit it, or add your own.` : `Nothing here yet. Add your first ${cfg.noun}.`}</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">${!rows.length && !editing && (STARTER[cfg.table] || []).length ? `<button class="abtn sm" data-act="import">Load what the page shows now (${STARTER[cfg.table].length})</button>` : ""}${editing ? "" : `<button class="abtn primary sm" data-act="add">+ Add ${cfg.noun}</button>`}</div>
+    </div>
+    <div class="items">${rows.map((r,i) => {
+      const img = cfg.img && cfg.img(r), th = img ? `<img src="${esc(img)}" alt="">` : esc(cfg.thumb ? cfg.thumb(r) : "");
+      return `<div class="item ${r.is_active === false ? "off" : ""}"><div class="thumb">${th}</div>
+        <div style="min-width:0"><b>${esc(cfg.label(r) || "Untitled")}</b><span>${esc(cfg.sub(r) || "")}${r.is_active === false ? " · Hidden" : ""}</span></div>
+        <div class="acts"><button class="abtn sm" data-act="edit" data-i="${i}">Edit</button><button class="abtn sm" data-act="toggle" data-i="${i}">${r.is_active === false ? "Show" : "Hide"}</button><button class="abtn sm danger" data-act="del" data-i="${i}">Delete</button></div></div>`;
+    }).join("")}</div><div class="list-msg"></div>`;
+  if (editing) wireFields(body.querySelector(".editor"), cfg.rpc);
+  const lm = body.querySelector(".list-msg");
+  body.onclick = async e => {
+    const b = e.target.closest("button[data-act]"); if (!b) return;
+    const act = b.dataset.act, r = rows[b.dataset.i];
+    if (act === "import"){
+      busy(b, true, "Loading…");
+      try { for (const r of STARTER[cfg.table]) await B.upsert(cfg, { ...r }); await listTab(cfg); msg($("#tabBody .list-msg"), "ok", "Loaded. Edit any item below."); loadPublic(); }
+      catch (err) { msg(lm, "err", "Couldn't load them all. Try again."); busy(b, false); }
+    }
+    else if (act === "add"){ editing = { ...cfg.blank(), sort_order: rows.length + 1 }; listTab(cfg); }
+    else if (act === "edit"){ editing = { ...r }; listTab(cfg); }
+    else if (act === "cancel"){ editing = null; listTab(cfg); }
+    else if (act === "save"){
+      const ed = body.querySelector(".editor"), m = ed.querySelector(".form-msg"), item = collect(ed, editing);
+      const first = cfg.fields[0][0];
+      if (!String(item[first] || "").trim()){ msg(m, "err", `Add a ${cfg.fields[0][1].toLowerCase()} first.`); return; }
+      busy(b, true, "Saving…");
+      try {
+        if (!(await B.upsert(cfg, item))){ msg(m, "err", "Not saved. Your access code may have changed. Sign out and sign in again."); busy(b, false); return; }
+        editing = null; await listTab(cfg); msg($("#tabBody .list-msg"), "ok", "Saved. The public page is updated."); loadPublic();
+      } catch (err) { msg(m, "err", "Couldn't save. Check your connection and try again."); busy(b, false); }
+    }
+    else if (act === "toggle"){
+      busy(b, true, "");
+      try {
+        await B.upsert(cfg, { ...r, is_active: r.is_active === false });
+        await listTab(cfg); loadPublic();
+      } catch (err) { msg(lm, "err", "Couldn't update that. Try again."); busy(b, false); }
+    }
+    else if (act === "del"){
+      if (!b.classList.contains("confirm")){ b.classList.add("confirm"); b.textContent = "Confirm delete"; setTimeout(() => { if (document.body.contains(b)){ b.classList.remove("confirm"); b.textContent = "Delete"; } }, 4000); return; }
+      busy(b, true, "");
+      try {
+        await B.remove(cfg, r.id);
+        await listTab(cfg); msg($("#tabBody .list-msg"), "ok", "Deleted."); loadPublic();
+      } catch (err) { msg(lm, "err", "Couldn't delete that. Try again."); busy(b, false); }
+    }
+  };
+}
+
+function securityTab(){
+  const body = $("#tabBody");
+  body.innerHTML = `<p class="muted" style="margin-bottom:18px">Change the access code owners use to sign in. Use at least 6 characters and share it only with people who should edit the site.</p>
+    <form id="codeForm" class="form" style="max-width:520px">
+      <div class="field full"><label for="newCode">New access code</label><input id="newCode" type="password" autocomplete="new-password" minlength="6" required></div>
+      <div class="field full"><label for="newCode2">Type it again</label><input id="newCode2" type="password" autocomplete="new-password" minlength="6" required></div>
+      <div class="full"><button class="abtn primary" type="submit" id="codeBtn">Change access code</button></div>
+    </form><div class="form-msg"></div>`;
+  $("#codeForm").onsubmit = async e => {
+    e.preventDefault();
+    const a = $("#newCode").value.trim(), b2 = $("#newCode2").value.trim(), m = body.querySelector(".form-msg"), b = $("#codeBtn");
+    if (a.length < 6){ msg(m, "err", "Use at least 6 characters."); return; }
+    if (a !== b2){ msg(m, "err", "The two codes don't match."); return; }
+    busy(b, true, "Saving…");
+    try {
+      await api("/code", { method:"POST", body: JSON.stringify({ code, newCode: a }) });
+      code = a; store.set(a); $("#codeForm").reset(); msg(m, "ok", "Access code changed. Use the new code next time you sign in.");
+    } catch (err) {
+      if (err.status === 401) msg(m, "err", "Not changed. Sign out and sign in again, then retry.");
+      else msg(m, "err", "Couldn't change the code. Check your connection and try again.");
+    }
+    finally { busy(b, false); }
+  };
+}
+
+loadPublic();
+})();
+</script>
+</body>
+</html>
