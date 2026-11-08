@@ -1,7 +1,6 @@
-# All files sit at the top level of the repository.
 [build]
-  publish = "."
-  functions = "."
+  publish = "public"
+  functions = "netlify/functions"
 
 [functions]
   node_bundler = "esbuild"
